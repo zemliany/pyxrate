@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "pyxrate"
+version = "0.1.8"
+description = "A lightweight Python package for retrieving and using foreign exchange rates and convert currencies"
+authors = ["Maksym Zemlianyi <m.zemlianyi@setuniversity.edu.ua>"]
+readme = "currency_exchange/README.md"
+packages = [{include = "currency_exchange"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+aiohttp = "3.11.8"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.10.0"
+flake8 = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+skip-string-normalization = true
+target-version = ['py39']
+
+[tool.flake8]
+max-line-length = 120
+exclude = ["build", "dist", "__pycache__"]
