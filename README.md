@@ -31,11 +31,11 @@ from currency_exchange import converter
 # Initialize the library
 currency_client = converter.CurrencyConverter()
 
-# Get the supported currency rates
+# Get the supported currency сodes
 all_currencies = currency_client.currencies()
 print(f"All supported currencies: {all_currencies}")
 
-# Check support of specific currency rate
+# Check support of specific currency code
 # NOTE: currency codes are case-insensitive
 currency = currency_client.currencies('uah')
 print(f"Currency name: {currency}")
