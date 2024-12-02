@@ -87,7 +87,7 @@ format: # Format code with Black
 
 lint: # Lint the codebase
 	@echo "======= Running lint for code... ======="
-	poetry run flake8 --max-line-length=120 --ignore=E731
+	poetry run flake8 --extend-exclude .venv,dist --max-line-length=120 --ignore=E731
 	@echo "======= Code linting completed successfully. =======\n"
 
 coverage: # Check coverage the codebase
