@@ -90,6 +90,12 @@ lint: # Lint the codebase
 	poetry run flake8 --max-line-length=120 --ignore=E731
 	@echo "======= Code linting completed successfully. =======\n"
 
+coverage: # Check coverage the codebase
+	@echo "======= Running coverage for code... ======="
+	coverage run --omit="*/__init__.py,*/tests/*" -m unittest discover -s tests
+	coverage report --fail-under=75
+	@echo "======= Code coverage completed successfully. =======\n"
+
 patch: # Increment package version
 	@echo "Patching package version..."
 	poetry version patch
