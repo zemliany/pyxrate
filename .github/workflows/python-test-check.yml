@@ -35,3 +35,10 @@ jobs:
         make lint
         make format
         make coverage
+
+    - name: Publish TEST PyPI
+      env:
+        TEST_PYPI_TOKEN: ${{ secrets.TEST_PYPI_TOKEN }}
+      run: |
+        source .venv/bin/activate
+        make publish-test
