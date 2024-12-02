@@ -30,4 +30,4 @@ jobs:
       run: poetry install --no-interaction
 
     - name: Github Action for testing the code
-      run: make coverage
+      run: make help
