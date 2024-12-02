@@ -18,6 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
+        poetry install
         make help
 
     - name: Github Action for testing the code
