@@ -29,5 +29,9 @@ jobs:
     - name: Install project
       run: poetry install --no-interaction
 
-    - name: Github Action for testing the code
-      run: make coverage
+    - name: Execute lint / formatting / tests
+      run: |
+        source .venv/bin/activate
+        make lint
+        make format
+        make coverage
