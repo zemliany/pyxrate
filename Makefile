@@ -1,6 +1,6 @@
 # Makefile for managing the project
 
-.PHONY: help check-poetry check-token check-python check-token lock dependencies env test format lint
+.PHONY: help check-poetry check-token check-python check-token lock dependencies env test format lint coverage
 
 help: # Show available commands and descriptions
 	@echo "Available commands:"
@@ -87,8 +87,14 @@ format: # Format code with Black
 
 lint: # Lint the codebase
 	@echo "======= Running lint for code... ======="
-	poetry run flake8 --max-line-length=120 --ignore=E731
+	poetry run flake8 --extend-exclude .venv,dist --max-line-length=120 --ignore=E731
 	@echo "======= Code linting completed successfully. =======\n"
+
+coverage: # Check coverage the codebase
+	@echo "======= Running coverage for code... ======="
+	coverage run --omit="*/__init__.py,*/tests/*" -m unittest discover -s tests
+	coverage report --fail-under=75
+	@echo "======= Code coverage completed successfully. =======\n"
 
 patch: # Increment package version
 	@echo "Patching package version..."

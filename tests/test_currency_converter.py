@@ -243,3 +243,7 @@ class TestCurrencyAmountValueError(unittest.TestCase):
         exception = cm.exception
         self.assertEqual(str(exception), f"{custom_message}. Got: {amount}")
         self.assertEqual(exception.amount, amount)
+
+
+if __name__ == '__main__':
+    unittest.main()

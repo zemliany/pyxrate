@@ -153,6 +153,7 @@ More details: https://python-poetry.org/docs/#installing-with-the-official-insta
 #### Setup development environment
 
 ```bash
+> make help
 
 Available commands:
   help             Show available commands and descriptions

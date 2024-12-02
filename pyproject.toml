@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyxrate"
-version = "0.1.9"
+version = "0.1.11"
 description = "A lightweight Python package for retrieving and using foreign exchange rates and convert currencies"
 authors = ["Maksym Zemlianyi <m.zemlianyi@setuniversity.edu.ua>"]
 readme = "currency_exchange/README.md"
@@ -12,6 +12,7 @@ packages = [{include = "currency_exchange"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 aiohttp = "3.11.8"
+coverage = "^7.6.8"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.10.0"

@@ -20,10 +20,8 @@ pip3 install pyxrate
 ```
 
 ### Dependencies
-* Python 3.7+
-* AIOHTTP and AsyncIO library for API communication
-* poetry
-* GNU/BSD make
+* Python <4.0, >=3.11
+* aiohttp
 
 ### Quick Start
 
