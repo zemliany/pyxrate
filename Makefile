@@ -1,6 +1,6 @@
 # Makefile for managing the project
 
-.PHONY: help check-poetry check-token check-python check-token lock dependencies env test format lint
+.PHONY: help check-poetry check-token check-python check-token lock dependencies env test format lint coverage
 
 help: # Show available commands and descriptions
 	@echo "Available commands:"
