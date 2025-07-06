@@ -196,7 +196,7 @@ notified that **all exchange operations by using this lib in terms of historical
 * Thanks to Fawaz Ahmed for the amazing [Exchange API](https://github.com/fawazahmed0/exchange-api).
 * Much appreciated to [SET University](https://www.setuniversity.edu.ua/en/) in scope of which this library was 
 developed as part of final project for Python course as part of Master's deegree program for [ML & Cloud Computing](https://www.setuniversity.edu.ua/en/education/computer-science-machine-learning-cloud-computing/)
-* Big kudos to tutor and mentor [Denys Kotov](https://www.linkedin.com/in/deniskkotov/)
+* Big kudos to tutor and mentor [Denys Kotov](https://www.linkedin.com/in/denyskotov/)
 
 ### License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
